@@ -171,7 +171,7 @@ impl MontgomeryPoint {
 // TODO Determine how much of the hash-to-group API should be exposed after the CFRG
 //      draft gets into a more polished/accepted state.
 #[allow(unused)]
-pub(crate) fn elligator_encode(r_0: &FieldElement) -> MontgomeryPoint {
+pub fn elligator_encode(r_0: &FieldElement) -> MontgomeryPoint {
     let one = FieldElement::one();
     let d_1 = &one + &r_0.square2(); /* 2r^2 */
 
